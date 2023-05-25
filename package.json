@@ -1,7 +1,8 @@
 {
-  "name": "nextra-docs-template",
+  "name": "myrepo-ru",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Knowledge base for the development of technical documentation",
+	"keywords": ["techdocs", "technical", "documents", "documentation", "development", "software", "standard"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/pnrf/tech-docs.git"
   },
-  "author": "Shu Ding <g@shud.in>",
-  "license": "MIT",
+  "author": "Yuri A.P. <pankratov.web@mail.ru>",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/pnrf/tech-docs/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://myreporu.vercel.app",
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
     "next": "^13.0.6",
