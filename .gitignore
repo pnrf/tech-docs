@@ -1,2 +1,14 @@
-.next
-node_modules
+dist/
+node_modules/
+out/
+.DS_Store
+.env
+.eslintcache
+.idea/
+*.log
+.next/
+.turbo/
+.vercel
+
+
+
