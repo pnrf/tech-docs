@@ -10,6 +10,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
+  @vercel/analytics: ^1.0.1
   next: 13.0.6_react-dom@18.2.0+react@18.2.0
   nextra: 2.2.14_f26ff3bd08f1cd28b0f73422c76f5ffd
   nextra-theme-docs: 2.2.14_d8d66b9d2170cddb63c39dddec8541b9
