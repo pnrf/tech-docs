@@ -1,15 +1,22 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "title": "Введение",
+    "type": "page",
+    "display": "hidden"
+  },
+  "knowledge-base": {
+    "title": "База знаний",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "docs-examples": {
+    "title": "Документы",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Блог",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "theme": {
+      "sidebar": false
+    }
   }
 }
