@@ -18,5 +18,10 @@
     "theme": {
       "sidebar": false
     }
-  }
+  },
+	"contacts": {
+		"title": "Контакты",
+		"href": "https://github.com/pnrf",
+		"newWindow": true
+	}
 }
