@@ -10,7 +10,7 @@ const config: DocsThemeConfig = {
 					myREPO.ru
 				</span>
 				<span style={{ fontWeight: 400, fontSize: '.9em', lineHeight: '1em' }}>
-					база знаний техписателя
+					сайт-портфолио техписателя
 				</span>
 			</div>
     </>
