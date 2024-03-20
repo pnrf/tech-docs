@@ -18,6 +18,9 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/pnrf/tech-docs',
   },
+	search: {
+		placeholder: 'Поиск по сайту'
+	},
   // chat: {
   //   link: 'https://discordapp.com/users/1058075588700672041',
   // },
