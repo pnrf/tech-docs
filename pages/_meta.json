@@ -21,6 +21,7 @@
   },
 	"contacts": {
 		"title": "Контакты",
+		"type": "page",
 		"href": "https://github.com/pnrf",
 		"newWindow": true
 	}
