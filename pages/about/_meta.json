@@ -1,0 +1,12 @@
+{
+  "about": {
+    "title": "Обо мне",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": true,
+      "pagination": false
+    }
+  }
+}
