@@ -2,7 +2,15 @@
   "name": "myrepo-ru",
   "version": "0.0.1",
   "description": "Knowledge base for the development of technical documentation",
-	"keywords": ["techdocs", "technical", "documents", "documentation", "development", "software", "standard"],
+  "keywords": [
+    "techdocs",
+    "technical",
+    "documents",
+    "documentation",
+    "development",
+    "software",
+    "standard"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -22,6 +30,7 @@
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
+    "npm": "^10.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

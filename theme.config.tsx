@@ -10,7 +10,7 @@ const config: DocsThemeConfig = {
 					Мой репозиторий
 				</span>
 				<span style={{ fontWeight: 400, fontSize: '.8em', lineHeight: '1.2em' }}>
-					для поиска работы и общения
+					для поиска работы мечты
 				</span>
 			</div>
     </>
