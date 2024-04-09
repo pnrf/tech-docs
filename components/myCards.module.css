@@ -1,0 +1,14 @@
+.wrapper {
+	width: 100%;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	list-style: none;
+}
+
+.image {
+	width: 266px;
+}
