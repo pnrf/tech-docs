@@ -1,0 +1,24 @@
+{
+  "index": "Быстрый старт",
+  "guide": "Настройки",
+  "-- Themes": {
+    "type": "separator",
+    "title": "Оформление "
+  },
+  "docs-theme": "Тема для документации",
+  "blog-theme": "Тема для блога",
+  "custom-theme": "Пользовательская тема",
+  "-- More": {
+    "type": "separator",
+    "title": "Дополнительно"
+  },
+  "about-link": {
+    "title": "Подробности о Nextra ↗",
+    "href": "/about"
+  },
+  "next.js-link": {
+    "title": "Документация Next.js ↗",
+    "href": "https://nextjs.org?utm_source=nextra.site&utm_medium=referral&utm_campaign=sidebar",
+    "newWindow": true
+  }
+}

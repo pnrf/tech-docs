@@ -1,0 +1,41 @@
+.wrapper {
+	margin: 10px 0;
+	width: 100%;
+	display: flex;
+	border: 1px dotted #647F94;
+	border-radius: 10px;
+}
+
+.image {
+	margin: 0;
+	width: 266px;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+.content {
+
+}
+
+.title {
+	color: #647F94;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.2em;
+}
+
+.text {
+	padding: 20px;
+	color: black;
+}
+
+.imagesList {
+	display: flex;
+}
+
+.imagesList__item {
+	margin: 0;
+	width: 90px;
+	object-fit: cover;
+	border-radius: 10px;
+}

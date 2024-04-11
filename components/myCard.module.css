@@ -11,6 +11,10 @@
 	background-color: white;
 }
 
+.wrapper:hover {
+	background-color: whitesmoke;
+}
+
 .image {
 	margin: 0 auto;
 	width: 173px;

@@ -1,0 +1,12 @@
+{
+  "organize-files": "Файловая структура",
+  "markdown": "Markdown",
+  "syntax-highlighting": "Подсветка",
+  "link": "Next.js ссылки",
+  "image": "Next.js изображения",
+  "ssg": "Next.js SSG",
+  "i18n": "Next.js I18n",
+  "custom-css": "CSS",
+  "advanced": "Продвинутые фичи",
+  "built-ins": "Компоненты"
+}
