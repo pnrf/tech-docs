@@ -3,7 +3,7 @@
   "guide": "Настройки",
   "-- Themes": {
     "type": "separator",
-    "title": "Оформление "
+    "title": "Оформление"
   },
   "docs-theme": "Тема для документации",
   "blog-theme": "Тема для блога",
