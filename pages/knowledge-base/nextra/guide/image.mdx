@@ -1,0 +1,33 @@
+# Next.js изображения
+
+Стандартный способ использовать изображения ([Next.js Image](https://nextjs.org/docs/basic-features/image-optimization)) внутри MDX – это непосредственно импортировать компонент:
+
+```mdx
+import Image from 'next/image'
+
+<Image src="/demo.png" alt="Hello" width={500} height={500} />
+```
+
+## Статические изображения
+
+import { Callout } from 'nextra/components'
+
+<Callout>
+  Эта опция включена по умолчанию. В конфигурационном файле Nextra предустановлено `staticImage: true`.
+</Callout>
+
+Nextra поддерживает автоматическую оптимизацию ваших статических изображений с помощью синтаксиса Markdown. Нет необходимости указывать ширину и высоту изображения, достаточно использовать `![]()`:
+
+```md filename="index.mdx"
+![Hello](/demo.png)
+```
+
+Эта команда загрузит файл `demo.png` внутрь директории `public` и автоматически обернет его в компонент Next.js `<Image>`.
+
+<Callout>
+  Также вы можете использовать относительный путь к файлу `![](../public/demo.png)`, если не хотите размещать его через `public`.
+</Callout>
+
+С помощью Next.js Image изменения макета страницы не произойдет. При загрузке изображения будет по умолчанию отображен красивый размытый заполнитель.
+
+![Nextra](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fog.87a47b86.jpeg&w=3840&q=75)

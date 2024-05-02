@@ -38,9 +38,8 @@ const config: DocsThemeConfig = {
     text: (
       <span>
         <p>©{' Панкратов Ю.А.'}, {new Date().getFullYear()} </p>
-				<p>Все права защищены</p>
 				<span>
-					Сделано с душой на <a href="https://nextra.site" target="_blank"> Nextra</a> и <a href="https://vercel.com" target="_blank">Vercel</a>
+					Работает на <a href="https://nextra.site" target="_blank"> Nextra</a> и <a href="https://vercel.com" target="_blank">Vercel</a>
 				</span>
       </span>
     )
