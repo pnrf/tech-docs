@@ -23,7 +23,8 @@ const config: DocsThemeConfig = {
 	},
   // docsRepositoryBase: 'https://github.com/pnrf/tech-docs',
 	sidebar: {
-		toggleButton: true
+		toggleButton: true,
+		defaultMenuCollapseLevel: 3
 	},
 	toc: {
 		title: "Оглавление"
