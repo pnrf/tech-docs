@@ -1,0 +1,23 @@
+# Tailwind CSS
+
+Tailwind CSS – это CSS-фрейморк, который предоставляет набор готовых CSS классов. С его помощью можно быстро стилизовать элементы. Об особенностях его применения в вашем Nextra проекте ознакомьтесь с официальной документацией [Tailwind CSS для Next.js](https://tailwindcss.com/docs/guides/nextjs).
+
+Для того, чтобы использовать классы Tailwind в ваших Markdown-файлах необходимо добавить файлы с расширениями `.md`
+и `.mdx` в параметр `content` в конфигурационном файле `tailwind.config.js`:
+
+```js filename="tailwind.config.js" /md,mdx/
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,jsx,ts,tsx,md,mdx}',
+    './components/**/*.{js,jsx,ts,tsx,md,mdx}',
+
+    // Or if using `src` directory:
+    './src/**/*.{js,jsx,ts,tsx,md,mdx}'
+  ],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+}
+```
