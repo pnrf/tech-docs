@@ -1,0 +1,35 @@
+{
+  "index": {
+    "title": "Главная",
+    "type": "page",
+    "display": "hidden"
+  },
+	"about": {
+		"title": "О себе",
+		"type": "page"
+	},
+	"portfolio": {
+    "title": "Портфолио",
+    "type": "page"
+  },
+  "knowledge-base": {
+    "title": "База знаний",
+    "type": "page"
+  },
+  "blog": {
+    "title": "Блог ↗",
+    "type": "page",
+		"href": "https://github.com/pnrf",
+		"newWindow": true,
+    "theme": {
+      "sidebar": true
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}

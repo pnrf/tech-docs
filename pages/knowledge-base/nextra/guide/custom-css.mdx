@@ -1,0 +1,31 @@
+# Поддержка пользовательского CSS
+
+Nextra на 100% совместима со 
+[встроенной CSS поддержкой от Next.js](https://nextjs.org/docs/basic-features/built-in-css-support),
+включая `.css`, `.module.css`, и Sass (`.scss`, `.sass`, `.module.scss`,
+`.module.sass`) файлы.
+
+Для примера рассмотрим следующую таблицу стилей в файле `styles.css`:
+
+```css filename="styles.css"
+body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  padding: 20px 20px 60px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+```
+
+Вы можете создать файл `pages/_app.js` и импортировать в него ваши стили:
+
+```jsx filename="pages/_app.js"
+import '../styles.css'
+
+// Этот стандартный экспорт необходим в новом файле `pages/_app.js`.
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+```
+
+Обо всех доступных возможностях CSS читайте в [документации по Next.js](https://nextjs.org/docs/basic-features/built-in-css-support).

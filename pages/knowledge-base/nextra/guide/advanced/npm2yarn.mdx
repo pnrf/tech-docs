@@ -1,0 +1,23 @@
+# Npm2Yarn
+
+Nextra использует пакет
+[`@theguild/remark-npm2yarn`](https://npmjs.com/package/@theguild/remark-npm2yarn),
+который заменяет блок кода, содержащий метаданные `npm2yarn`, на компоненты 
+[`<Tabs />` and `<Tabs.Tab />`](/docs/guide/built-ins/tabs) из
+`nextra/components`.
+
+Выбранная вкладка сохраняется в локальном хранилище браузера (`local storage`), и отображается при последующих рендерингах страницы.
+
+## Пример
+
+```sh npm2yarn
+npm i -D @graphql-eslint/eslint-plugin
+```
+
+## Использование
+
+````mdx filename="Markdown" /npm2yarn/
+```sh npm2yarn
+npm i -D @graphql-eslint/eslint-plugin
+```
+````

@@ -1,0 +1,71 @@
+import { Callout } from 'nextra/components'
+import { Cards } from 'nextra/components'
+
+# Nextra
+
+<Callout type="warning">
+  **Внимание!** Здесь представлен довольно фривольный перевод официальной документации [Nextra](https://nextra.site) на русский язык. Я преследую две цели:
+	1. разобраться в возможностях фреймворка для создания собственного сайта;
+	2. наглядно показать возможности фреймворка для нужд технических писателей.  
+
+	Информация может быть не актуальной. Пожалуйста, пользуйтесь документацией на [Nextra.site](https://nextra.site/docs)
+</Callout>
+
+**Nextra** – это фреймворк на основе Next.js, который позволяет создавать статические сайты с документацией. Система поддерживает все основные возможности Next.js, а также разметку Markdown для генерации контента.
+
+## Быстрый старт
+
+Для того, чтобы начать использовать Nextra, необходимо выбрать тему. Из коробки доступно два варианта:
+
+<Cards num={2}>
+  <Cards.Card
+    image
+    arrow
+    title="Тема для документации"
+    href="/docs/docs-theme/start"
+  >
+    <>![Documentation theme](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdocs-theme.fbd25b85.png&w=3840&q=75)</>
+  </Cards.Card>
+  <Cards.Card image arrow title="Тема для блога" href="/docs/blog-theme/start">
+    <>![Blog theme](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblog-theme.56ff2f82.png&w=3840&q=75)</>
+  </Cards.Card>
+</Cards>
+
+Также вы можете использовать собственную тему. Подробнее о том, как ее настроить смотрите в разделе [Пользовательская тема](/docs/custom-theme).
+
+## Популярные вопросы
+
+`Nextra FAQ` представляет собой подборку ответов на наиболее часто задаваемые вопросы. Если вы не нашли среди них интересующую вас информацию, вы можете обратиться к разработчикам напрямую. Для этого, пожалуйста, [откройте дискуссию](https://github.com/shuding/nextra/discussions).  
+
+<br />
+
+export function FAQBox({ title, children }) {
+  return (
+    <details
+      open
+      className="last-of-type:mb-0 rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2 mt-4"
+    >
+      <summary>
+        <strong className="text-lg">{title}</strong>
+      </summary>
+      <div className="nx-p-2">{children}</div>
+    </details>
+  )
+}
+
+<FAQBox title="Возможно ли в Nextra использовать Next.js `app router`?">
+	Нет. Nextra работает только через директорию `/pages`. Поддержка `app router` пока еще нами не реализована. Однако вы можете использовать `/app` и `/pages` одновременно. Для этого поместите документы внутри `/pages`, а другие роуты – в `/app`.
+</FAQBox>
+
+<FAQBox title="Возможно ли использовать X вместе с Nextra?">
+  В большинстве случаев "да". Поскольку Nextra представляет собой плагин для Next.js, практически все, что может быть реализовано с помощью React, может быть применено в Nextra. Вот несколько примеров:
+
+- [Применение Tailwind CSS](/docs/guide/tailwind-css)
+- [Применение пользовательских CSS и Sass](/docs/guide/custom-css)
+- [Применение пользовательских шрифтов](https://nextjs.org/docs/basic-features/font-optimization)
+
+</FAQBox>
+
+<FAQBox title="Как добавить в Nextra компонент live coding?">
+  Для этого вы можете воспользоваться сторонними библиотеками. Например, [Sandpack](https://sandpack.codesandbox.io) и [react-live](https://github.com/FormidableLabs/react-live). Они позволяют добавлять live coding компоненты в MDX.
+</FAQBox>
