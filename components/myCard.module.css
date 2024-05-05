@@ -4,8 +4,8 @@
 
 .wrapper {
 	margin: 0 auto;
-	width: 266px;
-	height: 300px;
+	width: 220px;
+	height: 220px;
 	border: 1px solid #647F94;
 	border-radius: 10px;
 	background-color: white;
@@ -17,14 +17,14 @@
 
 .image {
 	margin: 0 auto;
-	width: 173px;
+	width: 133px;
 	object-fit: cover;
 	border-radius: 10px;
 }
 
 .title {
 	color: #647F94;
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 600;
 	line-height: 1.2em;
 	text-align: center;

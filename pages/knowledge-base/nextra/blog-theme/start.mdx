@@ -1,40 +1,37 @@
 import { Callout, Steps } from 'nextra/components'
 
-# Get Started
+# Быстрый старт
 
-<Callout type="warning">Docs for this theme is under construction.</Callout>
+<Callout type="warning">Документация по этой теме находится [в разработке](https://nextra.site/docs/custom-theme).</Callout>
 
 <Callout>
-  An example of the blog theme can be found [here](https://demo.vercel.blog),
-  with source code [here](https://github.com/vercel/nextjs-portfolio-starter).
+  Пример темы для блога можно посмотреть [здесь](https://demo.vercel.blog),
+  а исходный код – [здесь](https://github.com/vercel/nextjs-portfolio-starter).
 </Callout>
 
-Similar to the [Docs Theme](/docs/docs-theme/start), you can install the blog
-theme with the following commands:
+Подобно [теме для документации](../docs-theme/start), вы можете установить и настроить тему для блога:
 
-## Quick Start from Template
+## Быстрый старт из коробки
 
-## Start as New Project
+## Новый проект
 
 <Steps>
-### Install
+### Установка
 
-To create a Nextra Docs site manually, you have to install **Next.js**,
-**React**, **Nextra**, and **Nextra Blog Theme**. In your project directory, run
-the following command to install the dependencies:
+Для того, чтобы создать Nextra Blog вручную необходимо проинсталлировать **Next.js**,
+**React**, **Nextra**, и **Nextra Blog Theme**. Для этого в директории с вашим проектом установите зависимости:
 
 ```sh npm2yarn
 npm i next react react-dom nextra nextra-theme-blog
 ```
 
 <Callout>
-  If you already have Next.js installed in your project, you only need to
-  install `nextra` and `nextra-theme-blog` as the add-ons.
+  Если в вашем проекте Next.js уже установлен, вам потребуется проинсталлировать `nextra` и `nextra-theme-blog` в качестве дополнений (add-ons).
 </Callout>
 
-### Add Next.js Config
+### Создайте Next.js Config
 
-Create the following `next.config.js` file in your project’s root directory:
+В корневой директории создайте файл `next.config.js`:
 
 ```js filename="next.config.js"
 const withNextra = require('nextra')({
@@ -44,18 +41,16 @@ const withNextra = require('nextra')({
 
 module.exports = withNextra()
 
-// If you have other Next.js configurations, you can pass them as the parameter:
+// Если у вас имеются также другие конфигурации Next.js, 
+// то вы можете передать их в качестве параметров:
 // module.exports = withNextra({ /* other next.js config */ })
 ```
 
-With the above configuration, Nextra can handle Markdown files in your Next.js
-project, with the specified theme. Other Nextra configurations can be found in
-[Guide](/docs/guide).
+С использованием указанной выше конфигурации Nextra сможет обрабатывать Markdown файлы в вашем Next.js проекте, учитывая специфику тему. Другие конфигурации Nextra вы можете посмотреть в [Настройках](../guide).
 
-### Create Blog Theme Config
+### Создайте конфигурационный файл
 
-Lastly, create the corresponding `theme.config.jsx` file in your project’s root
-directory. This will be used to configure the Nextra Blog theme:
+В корневой директории вашего проекта создайте конфигурационный файл `theme.config.jsx`. Он применит конфигурацию темы для блога:
 
 ```jsx filename="theme.config.jsx"
 export default {
@@ -81,9 +76,9 @@ export default {
 }
 ```
 
-### Ready to Go!
+### На этом все!
 
-Now, you can run the `next` or `next dev` command specified in `package.json` to
-start developing the project! 🎉
+Теперь вы можете запустить свой проект. 🎉  
+Используйте команды `next` или `next dev`, которые указаны в вашем `package.json`.
 
 </Steps>

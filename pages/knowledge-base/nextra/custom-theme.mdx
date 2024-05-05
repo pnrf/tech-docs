@@ -2,7 +2,7 @@ import { Callout, Steps } from 'nextra/components'
 
 # Пользовательская тема
 
-Тема в Nextra работает как слой/макет, который будет отображаться как оболочка для
+Тема в Nextra работает как слой, который будет отображаться как оболочка для
 всех страниц. В этой документации вы узнаете о процессе создания пользовательской
 темы.
 
@@ -13,11 +13,9 @@ import { Callout, Steps } from 'nextra/components'
 ## Создание и настройка темы
 
 <Steps>
-### Configure Nextra to Use the Theme
+### Настройте Nextra под вашу тему
 
-First, you need to tell Nextra to use your custom theme file instead of official
-ones. In your Next.js config, you can pass the path to your theme file to the
-Nextra plugin:
+Вначале, вы должны сообщить Nextra, что хотите использовать собственную тему вместо предустановленных. Для этого в конфигурационном файле `next.config.js` укажите путь к файлу с вашей темой:
 
 ```js {2} filename="next.config.js"
 const withNextra = require('nextra')({
@@ -30,10 +28,9 @@ module.exports = withNextra({
 })
 ```
 
-### Create a Basic Theme
+### Создайте базовый контент
 
-You can now start working on your theme! In your root directory, create the
-corresponding `theme.tsx` file with basic content:
+Вы уже можете работать в вашей теме! В корневой директории создайте корреспондирующий файл `theme.tsx` с базовым контентом:
 
 ```tsx filename="theme.tsx" /children/
 import type { NextraThemeLayoutProps } from 'nextra'
@@ -47,29 +44,24 @@ export default function Layout({ children }: NextraThemeLayoutProps) {
   )
 }
 ```
-
-It accepts a `children` prop, which is the MDX content of the current page, and
-wraps some other elements around the content. After creating the theme, you can
-simply add a MDX file as `pages/index.mdx` and see the result:
+Эта функция принимает свойства `children`, которые являются MDX контентом текущей страницы, и оболочкой для некоторых других элементов контента. После создания темы от вас потребуется лишь добавить MDX файл `pages/index.mdx`. Результат можно отслеживать локально на вашем компьютере по порту `localhost:3000`:
 
 ![Nextra Custom Theme screenshot](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcustom-theme.d9599858.png&w=3840&q=75)
 
 <br />
 
-Inside your theme layout, you can use CSS imports or other ways to style it.
-Next.js hooks such as `useRouter`, `Head` are also available.
+Внутри вашей темы вы можете применить собственные CSS стили или стилизовать страницу иным способом. 
+Inside your theme layout, you can use CSS imports or other ways to style it. Для этого используйте импорт стилей. Хуки Next.js такие как `useRouter` и `Head` также доступны.
 
-### Render Metadata for the Active Page
+### Укажите метаданные для активной страницы
 
-Other than `children`, some other useful props are passed to the theme layout
-too. With the `pageOpts` props, the theme can access the page’s meta
-information.
+Помимо `children` в тему также передаются и некоторые другие полезные свойства. С помощью `pageOpts` тема может получить доступ к метаданные (Metadata) страницы.
 
-For example, let’s implement these features:
+Для примера применим следующие фичи:
 
-- Render the page title in `<title>`
-- Show a simple table of contents
-- Add a meta tag for `og:image` via the front matter
+– Укажем заголовок страницы в теге `<title>`
+– Отобразим простое содержание
+– Добавим метатег для `og:image` на клиенте
 
 ```tsx filename="theme.tsx" /pageOpts/
 import Head from 'next/head'
@@ -97,14 +89,11 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
 }
 ```
 
-### Use Page Map of the Entire Site
+### Используйте Page Map для всего сайта
 
-Now, if you want to render something like a sidebar or a navigation bar, which
-relies on information of not only the current page but also other pages, you can
-use the `pageMap` value.
+Отныне вы можете использовать pageMap, если хотите отобразить что-то вроде боковой панели (sidebar) или панели навигации (nav bar), которые передают информацию не только о текущей странице, но также и о других страницах.
 
-For example, we can render a simple navigation list with all the pages in the
-top level:
+Например, мы может отобразить простой список всех страниц в верхнем меню:
 
 ```tsx filename="theme.tsx" /pageMap/
 import Link from 'next/link'
@@ -131,15 +120,12 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   )
 }
 ```
-
-There are other item kinds such as `Folder` (for directories) and `Meta` (for
-`_meta.json` files). All the items are typed so you can easily know the
-properties.
+Также существуют и другие типы элементов, такие как `Folder` (для директорий) и `Meta` (для `_meta.json`). Все элементы типизированы, поэтому вы легко можете изменять их свойства.
 
 </Steps>
 
-## Advanced Usage
+## Продвинутое использование
 
 <Callout type="warning">
-  Docs for advanced usage are under construction.
+  Данная информация находится [в разработке](https://nextra.site/docs/custom-theme).
 </Callout>
