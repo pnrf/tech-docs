@@ -1,4 +1,6 @@
 {
-	"intro": "Содержание",
-	"nextra": "Nextra"
+	"intro": "О базе знаний",
+	"nextra": "Nextra",
+	"docs-as-code": "Docs-as-Code",
+	"glossary": "Глоссарий"
 }

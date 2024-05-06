@@ -37,9 +37,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <span>
-        <p>©{' Панкратов Ю.А.'}, {new Date().getFullYear()} </p>
+        <p>©{' Панкратов Ю.А.'}, {new Date().getFullYear()}. {' Все права защищены.'} </p>
 				<span>
-					Работает на <a href="https://nextra.site" target="_blank"> Nextra</a> и <a href="https://vercel.com" target="_blank">Vercel</a>
+					Сайт хостится и работает на <a href="https://github.com" target="_blank"> Github</a>, <a href="https://vercel.com" target="_blank">Vercel</a>, <a href="https://nextjs.org" target="_blank"> Next.js</a> и <a href="https://nextra.site" target="_blank"> Nextra</a>
 				</span>
       </span>
     )
