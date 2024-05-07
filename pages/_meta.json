@@ -17,13 +17,8 @@
     "type": "page"
   },
   "blog": {
-    "title": "Блог ↗",
-    "type": "page",
-		"href": "https://github.com/pnrf",
-		"newWindow": true,
-    "theme": {
-      "sidebar": true
-    }
+    "title": "Блог",
+    "type": "page"
   },
   "404": {
     "type": "page",
