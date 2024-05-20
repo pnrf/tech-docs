@@ -1,15 +1,10 @@
 {
   "index": {
-    "title": "Главная",
-    "type": "page",
-    "display": "hidden"
-  },
-	"about": {
-		"title": "Обо мне",
+    "title": "Обо мне",
 		"type": "page"
 	},
 	"portfolio": {
-    "title": "Портфолио",
+    "title": "Документы",
     "type": "page"
   },
   "knowledge-base": {
