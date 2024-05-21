@@ -1,36 +1,5 @@
 {
-  "index": "Все разделы",
-  "-- TechDocs": {
-    "type": "separator",
-    "title": "Тех документация"
-  },
-  "tech-docs": "Руководство по эксплуатации",
-	"charts": "Описание процессов жизненного цикла",
-	"interface-texts": "Техническое задание",
-  "-- LegalDocs": {
-    "type": "separator",
-    "title": "Юр документация"
-  },
-	"legal-docs": "Лицензионный договор",
-	"knowledge-base-content": "Заявка на грант",
-	"-- Charts": {
-    "type": "separator",
-    "title": "Схемы и инфографика"
-  },
-	"-- UI-Texts": {
-    "type": "separator",
-    "title": "Тексты для интерфейсов"
-  },
-	"-- KnowledgeBase": {
-    "type": "separator",
-    "title": "Контент для баз знаний"
-  },
-	"-- WebApps": {
-    "type": "separator",
-    "title": "Лендинги и веб-приложения"
-  },
-	"-- More": {
-    "type": "separator",
-    "title": "Другие проекты"
-  }
+	"intro": "Все проекты",
+	"com-projects": "Коммерческие проекты",
+	"social-projects": "Общественные проекты"
 }
