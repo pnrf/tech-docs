@@ -1,6 +1,12 @@
 {
-	"blog": "Все публикации",
-	"articles": "Статьи",
-	"notes": "Заметки",
-	"faq": "Ответы на вопросы"
+	"publications": {
+		"title": "Публикации",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": true,
+      "pagination": false
+    }
+	}
 }

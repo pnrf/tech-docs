@@ -1,0 +1,46 @@
+{
+	"register-digital-ministry": {
+		"title":  "Реестр ПО Минцифры",
+    "display": "hidden"
+	},
+	"register-rospatent": {
+		"title": "Реестр ЭВМ Роспатента",
+    "display": "hidden"
+	},
+	"register-roszdravnadzor": {
+		"title": "Реестр медизделий",
+    "display": "hidden"
+	},
+	"grant-applications": {
+		"title": "Заявки на грант",
+    "display": "hidden"
+	},
+	"gov-procurement-docs": {
+		"title": "Дока для госзакупок",
+    "display": "hidden"
+	},
+	"ui-texts-wiki": {
+		"title": "UI-тексты и wiki",
+    "display": "hidden"
+	},
+	"tech-writers-storybook": {
+		"title": "Сборник историй",
+    "display": "hidden"
+	},
+	"nextra-docs-rus": {
+		"title": "Nextra 2.x",
+    "display": "hidden"
+	},
+	"portfolio-website": {
+		"title": "Сайт-портфолио",
+    "display": "hidden"
+	},
+	"public-activities": {
+		"title": "Мероприятия",
+    "display": "hidden"
+	},
+	"web-dev": {
+		"title": "Веб-разработка",
+    "display": "hidden"
+	}
+}
