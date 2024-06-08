@@ -1,6 +1,10 @@
 {
+	"*": {
+    "display": "hidden"
+	},
 	"publications": {
-		"title": "Публикации",
+		"display": "visible",
+		"title": "Перейти к оглавлению",
     "theme": {
       "breadcrumb": false,
       "footer": true,
@@ -8,5 +12,7 @@
       "toc": true,
       "pagination": false
     }
-	}
+	},
+	"zachem-tekhpisatelyu-sayt-portfolio": "Зачем техписателю сайт-портфолио",
+	"kak-ya-razrabotal-svoy-sayt-portfolio": "Как я разработал свой сайт-портфолио"
 }
