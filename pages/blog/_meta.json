@@ -2,7 +2,7 @@
 	"*": {
     "display": "hidden"
 	},
-	"publications": {
+	"index": {
 		"display": "visible",
 		"title": "Перейти к оглавлению",
     "theme": {
