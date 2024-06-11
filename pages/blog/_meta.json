@@ -2,7 +2,7 @@
 	"*": {
     "display": "hidden"
 	},
-	"index": {
+	"publications": {
 		"display": "visible",
 		"title": "Перейти к оглавлению",
     "theme": {
@@ -14,5 +14,6 @@
     }
 	},
 	"zachem-tekhpisatelyu-sayt-portfolio": "Зачем техписателю сайт-портфолио",
-	"kak-ya-razrabotal-svoy-sayt-portfolio": "Как я разработал свой сайт-портфолио"
+	"kak-ya-razrabotal-svoy-sayt-portfolio": "Как я разработал свой сайт-портфолио",
+	"kak-ya-stal-tekhnicheskim-pisatelem": "Как я стал техписателем"
 }

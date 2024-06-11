@@ -39,7 +39,11 @@
 		"title": "Мероприятия",
     "display": "hidden"
 	},
-	"web-dev": {
+	"uchastiye-v-razrabotke-zakonoproyektov": {
+		"title": "Законопроекты",
+		"display": "hidden"
+	},
+	"obucheniye-veb-razrabotke": {
 		"title": "Веб-разработка",
     "display": "hidden"
 	}
