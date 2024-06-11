@@ -11,31 +11,31 @@
 		"title": "Реестр медизделий",
     "display": "hidden"
 	},
-	"grant-applications": {
-		"title": "Инвестиции и гранты",
+	"sostavleniye-zayavok-na-polucheniye-grantov": {
+		"title": "Заявки на гранты",
     "display": "hidden"
 	},
-	"gov-procurement-docs": {
+	"sostavleniye-dokumentov-dlya-uchastiya-v-goszakupkakh": {
 		"title": "Документация для госзакупок",
     "display": "hidden"
 	},
-	"ui-texts-wiki": {
+	"napisaniye-ui-tekstov-i-kontenta-dlya-baz-znaniy": {
 		"title": "UI-тексты и база знаний",
     "display": "hidden"
 	},
-	"tech-writers-storybook": {
+	"oformleniye-sbornika-istoriy-tekhpisateley": {
 		"title": "Сборник историй",
     "display": "hidden"
 	},
-	"nextra-docs-rus": {
+	"perevod-dokumentatsii-nextra": {
 		"title": "Nextra 2.x",
     "display": "hidden"
 	},
-	"portfolio-website": {
+	"razrabotka-saita-portfolio-tekhpisatelya": {
 		"title": "Сайт-портфолио",
     "display": "hidden"
 	},
-	"public-activities": {
+	"uchastiye-v-obshchestvennykh-meropriyatiyakh": {
 		"title": "Мероприятия",
     "display": "hidden"
 	},
