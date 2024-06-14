@@ -1,6 +1,7 @@
 {
 	"intro": "О базе знаний",
-	"nextra": "1️⃣ Nextra 2.x",
+	"useful-links": "1️⃣ Полезные ссылки",
 	"docs-as-code": "2️⃣ Docs-as-Code",
-	"glossary": "3️⃣ Глоссарий"
+	"vs-code-plagins": "3️⃣ VS Code. Плагины",
+	"nextra": "4️⃣ Nextra 2.x"
 }
