@@ -1,161 +1,196 @@
 <a name="top-of-page"></a>
 
-# Плагины для VS Code
+# VS Code
 
 > **Visual Studio Code (VS Code)** — текстовый редактор, разработанный Microsoft для Windows, Linux и macOS. Позиционируется как «лёгкий» редактор кода для кроссплатформенной разработки веб- и облачных приложений. Имеет широкие возможности для кастомизации: пользовательские темы, сочетания клавиш и файлы конфигурации. Распространяется бесплатно.  
 >  
 > -- материал из [Википедии](https://ru.wikipedia.org/wiki/Visual_Studio_Code)
 
+## Settings.json
+
+Как и какие настройки использовать, смотрите на Youtube (например, в [уроке от WebDesign Master](https://youtu.be/JSGPd1E16-o?si=naQnUfRdt7ldc7LE)) или лучше читайте в [официальной документации](https://code.visualstudio.com/docs/getstarted/settings#_settingsjson).
+
+Для доступа к файлу `settings.json` используйте комбинацию клавиш **`Ctrl + Shift + P`** (на MacOS: **`Cmd + Shift + P`**). Появится строка поиска. Введите запрос `settings.json`. В выпадающем списке выберите "Параметры: Открыть пользовательские настройки (JSON)" ("Preferences: Open User Settings (JSON)").
+
+Мои настройки:
+
+```json copy filename="settings.json"
+ 
+{
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.startupEditor": "none",
+	"liveServer.settings.CustomBrowser": "chrome",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
+	"workbench.sideBar.location": "right",
+	"window.zoomLevel": 1,
+	"workbench.colorTheme": "New Moon Blue",
+	"editor.smoothScrolling": true,
+	"editor.fontSize": 14,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.folding": false,
+	"terminal.integrated.fontSize": 14,
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": true,
+	"editor.renderWhitespace": "boundary",
+	"editor.parameterHints.enabled": false,
+	"workbench.editor.enablePreview": false
+}
+
+```
+
+## Плагины
 
 ### All Autocomplete  
 Идентификатор: Atishay-Jain.All-Autocomplete  
 Описание: Create autocomplete items from open files in VSCode.  
 Издатель: Atishay Jain  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=Atishay-Jain.All-Autocomplete)
 
 ### Auto Close Tag
 Идентификатор: formulahendry.auto-close-tag  
 Описание: Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text  
 Издатель: Jun Han  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 
 ### Auto Complete Tag
 Идентификатор: formulahendry.auto-complete-tag  
 Описание: Extension Packs to add close tag and rename paired tag automatically for HTML/XML  
 Издатель: Jun Han  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag)
 
 ### Auto Rename Tag
 Идентификатор: formulahendry.auto-rename-tag  
 Описание: Auto rename paired HTML/XML tag  
 Издатель: Jun Han  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
 ### Code Runner
 Идентификатор: formulahendry.code-runner  
 Описание: Run C, C++, Java, JS, PHP, Python, Perl, Ruby, Go, Lua, Groovy, PowerShell, CMD, BASH, F#, C#, VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml, R, AppleScript, Elixir, VB.NET, Clojure, Haxe, Obj-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Pascal, Haskell, Nim  
 Издатель: Jun Han  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 ### CSS Peek
 Идентификатор: pranaygp.vscode-css-peek  
 Описание: Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition.  
 Издатель: Pranay Prakash  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
 
 ### eCSStractor for VSCode
 Идентификатор: diz.ecsstractor-port  
 Описание: VSCode plugin for extracting class names from HTML and generate CSS stylesheet for following work.  
 Издатель: diz  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=diz.ecsstractor-port)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=diz.ecsstractor-port)
 
 ### EditorConfig for VS Code
 Идентификатор: EditorConfig.EditorConfig  
 Описание: EditorConfig Support for Visual Studio Code  
 Издатель: EditorConfig  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ### ESLint
 Идентификатор: dbaeumer.vscode-eslint  
 Описание: Integrates ESLint JavaScript into VS Code.  
 Издатель: Microsoft  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### GitHub Theme
 Идентификатор: GitHub.github-vscode-theme  
 Описание: GitHub theme for VS Code  
 Издатель: GitHub  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
 
 ### HTML to CSS autocompletion
 Идентификатор: solnurkarim.html-to-css-autocompletion  
 Описание: Provides completion suggestions for classes and ids from markup documents to stylesheets.  
 Издатель: solnurkarim  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
 
 ### JavaScript (ES6) code snippets
 Идентификатор: xabikos.JavaScriptSnippets  
 Описание: Code snippets for JavaScript in ES6 syntax  
 Издатель: charalampos karypidis  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 
 ### Live Server
 Идентификатор: ritwickdey.LiveServer  
 Описание: Launch a development local Server with live reload feature for static & dynamic pages  
 Издатель: Ritwick Dey  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Multiple clipboards for VSCode
 Идентификатор: slevesque.vscode-multiclip  
 Описание: Override the regular Copy and Cut commands to keep selections in a clipboard ring  
 Издатель: slevesque  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-multiclip)
 
 ### New Moon: Blue Syntax Theme
 Идентификатор: taniarascia.new-moon-blue-vscode  
 Описание: New Moon: Blue Alt Syntax Theme  
 Издатель: Tania Rascia  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-blue-vscode)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-blue-vscode)
 
 ### Prettier - Code formatter
 Идентификатор: esbenp.prettier-vscode  
 Описание: Code formatter using prettier  
 Издатель: Prettier  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ### Preview
 Идентификатор: searKing.preview-vscode  
 Описание: A Markdown, ReStructured Text, HTML, Jade, Pug, Mermaid, Image previewer.  
 Издатель: Haixin Chen  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=searKing.preview-vscode)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=searKing.preview-vscode)
 
 ### Russian Language Pack for Visual Studio Code
 Идентификатор: MS-CEINTL.vscode-language-pack-ru  
 Описание: Language pack extension for Russian  
 Издатель: Microsoft  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
 
 ### Tailwind CSS IntelliSense
 Идентификатор: bradlc.vscode-tailwindcss  
 Описание: Intelligent Tailwind CSS tooling for VS Code  
 Издатель: Tailwind Labs  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ### Theme - Oceanic Next
 Идентификатор: naumovs.theme-oceanicnext  
 Описание: Oceanic Next theme for VSCode + dimmed bg version for better looking UI  
 Издатель: Sergii N  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=naumovs.theme-oceanicnext)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=naumovs.theme-oceanicnext)
 
 ### vscode-icons
 Идентификатор: vscode-icons-team.vscode-icons  
 Описание: Icons for Visual Studio Code  
 Издатель: VSCode Icons Team  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ### vscode-pdf
 Идентификатор: tomoki1207.pdf  
 Описание: Display pdf file in VSCode.  
 Издатель: tomoki1207  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf)
 
 ### W3C Web Validator
 Идентификатор: CelianRiboulet.webvalidator  
 Описание: Check the validity of your HTML/CSS files in one click  
 Издатель: Celian Riboulet  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=CelianRiboulet.webvalidator)
 
 ### markdownlint
 Идентификатор: DavidAnson.vscode-markdownlint  
 Описание: Markdown linting and style checking for Visual Studio Code  
 Издатель: David Anson  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ### New Moon Syntax Theme
 Идентификатор: taniarascia.new-moon-vscode  
 Описание: The optimized dark theme for web development. Your new favorite theme.  
 Издатель: Tania Rascia  
-[Ссылка на Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode)
+[Ссылка на Visual Studio Marketplace ↗](https://marketplace.visualstudio.com/items?itemName=taniarascia.new-moon-vscode)
 
 <br />
 
