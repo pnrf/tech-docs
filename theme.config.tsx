@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { Analytics } from "@vercel/analytics/react"
 
 const config: DocsThemeConfig = {
 	logo: (
@@ -48,6 +49,7 @@ const config: DocsThemeConfig = {
 				<span>
 					Сайт работает на <a href="https://github.com" target="_blank"> Github</a>, <a href="https://vercel.com" target="_blank">Vercel</a>, <a href="https://nextjs.org" target="_blank"> Next.js</a> и <a href="https://nextra.site" target="_blank"> Nextra</a>
 				</span>
+				<Analytics />
       </span>
     )
   },
