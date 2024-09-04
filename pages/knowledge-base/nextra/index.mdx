@@ -1,13 +1,9 @@
 import { Callout, Cards } from 'nextra/components'
 
-# Nextra
+# Nextra 2.x
 
 <Callout type="warning">
-  **Внимание!** Здесь представлен довольно фривольный перевод официальной документации [Nextra](https://nextra.site) на русский язык. Я преследую две цели:
-	1. разобраться в возможностях фреймворка для создания собственного сайта;
-	2. наглядно показать возможности фреймворка для нужд технических писателей.  
-
-	Информация может быть не актуальной. Пожалуйста, пользуйтесь документацией на [Nextra.site](https://nextra.site/docs)
+  Ниже представлен довольно фривольный перевод документации Nextra 2.x на русский язык. Информация может быть устаревшей. Лучше пользоваться официальной документацией на [Nextra.site](https://nextra.site/docs)
 </Callout>
 
 **Nextra** – это фреймворк на основе Next.js, который позволяет создавать статические сайты с документацией. Система поддерживает все основные возможности Next.js, а также разметку Markdown для генерации контента.
@@ -21,20 +17,20 @@ import { Callout, Cards } from 'nextra/components'
     image
     arrow
     title="Тема для документации"
-    href="/docs/docs-theme/start"
+    href="../knowledge-base/nextra/docs-theme"
   >
     <>![Documentation theme](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdocs-theme.fbd25b85.png&w=3840&q=75)</>
   </Cards.Card>
-  <Cards.Card image arrow title="Тема для блога" href="/docs/blog-theme/start">
+  <Cards.Card image arrow title="Тема для блога" href="../knowledge-base/nextra/blog-theme">
     <>![Blog theme](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblog-theme.56ff2f82.png&w=3840&q=75)</>
   </Cards.Card>
 </Cards>
 
-Также вы можете использовать собственную тему. Подробнее о том, как ее настроить смотрите в разделе [Пользовательская тема](/docs/custom-theme).
+Также вы можете настроить собственную тему. Подробнее об этом смотрите в разделе [Пользовательская тема](../knowledge-base/nextra/custom-theme).
 
 ## Популярные вопросы
 
-`Nextra FAQ` представляет собой подборку ответов на наиболее часто задаваемые вопросы. Если вы не нашли среди них интересующую вас информацию, вы можете обратиться к разработчикам напрямую. Для этого, пожалуйста, [откройте дискуссию](https://github.com/shuding/nextra/discussions).  
+`Nextra FAQ` представляет собой подборку ответов на наиболее часто задаваемые вопросы. Если вы не нашли среди них интересующую вас информацию, вы можете обратиться к разработчикам напрямую. Для этого, пожалуйста, [начните обсуждение](https://github.com/shuding/nextra/discussions).  
 
 <br />
 
@@ -59,9 +55,9 @@ export function FAQBox({ title, children }) {
 <FAQBox title="Возможно ли использовать X вместе с Nextra?">
   В большинстве случаев "да". Поскольку Nextra представляет собой плагин для Next.js, практически все, что может быть реализовано с помощью React, может быть применено в Nextra. Вот несколько примеров:
 
-- [Применение Tailwind CSS](/docs/guide/tailwind-css)
-- [Применение пользовательских CSS и Sass](/docs/guide/custom-css)
-- [Применение пользовательских шрифтов](https://nextjs.org/docs/basic-features/font-optimization)
+- [Применение Tailwind CSS](../knowledge-base/nextra/guide/advanced/tailwind-css)
+- [Применение пользовательских CSS и Sass](../knowledge-base/nextra/guide/custom-css)
+- [Применение пользовательских шрифтов](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts)
 
 </FAQBox>
 

@@ -1,4 +1,3 @@
-import { OptionTable } from '../../../../components/table/'
 import { Callout } from 'nextra/components'
 
 # Подсветка синтаксиса
@@ -279,15 +278,9 @@ function hello () {
 
 Вы можете отключить предустановленную подстветку синтаксиса и установить свою собственную. Для этого на глобальном уровне в конфигурационном файле Nextra (`next.config.js`) пропишите атрибут: `codeHighlight: false`.
 
-<OptionTable
-  options={[
-    [
-      'codeHighlight',
-      'boolean',
-      'Enable or disable syntax highlighting. Defaults to `true`.'
-    ]
-  ]}
-/>
+|Option|Type|Description|
+|------|------|------|
+|codeHighlight|boolean|Enable or disable syntax highlighting. Defaults to 'true'.|
 
 ## Пользовательская грамматика
 
@@ -325,7 +318,7 @@ nextra({
 
 ## Пользовательская тема
 
-С помощью `mdxOptions.rehypePrettyCodeOptions` вы также можете перенастроить пользовательскую тему вместо CSS переменных ([CSS Variables](/docs/guide/syntax-highlighting)):
+С помощью `mdxOptions.rehypePrettyCodeOptions` вы также можете перенастроить пользовательскую тему вместо CSS переменных ([CSS Variables](#кастомизация-темы)):
 
 ```js filename="next.config.js" {4}
 nextra({

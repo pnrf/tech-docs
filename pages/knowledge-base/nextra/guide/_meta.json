@@ -6,7 +6,7 @@
   "image": "Next.js изображения",
   "ssg": "Next.js SSG",
   "i18n": "Next.js I18n",
-  "custom-css": "CSS",
+  "custom-css": "CSS и Sass",
   "advanced": "Расширения",
   "build-ins": "Компоненты"
 }

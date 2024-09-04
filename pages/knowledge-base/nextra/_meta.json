@@ -14,7 +14,7 @@
   },
   "about-link": {
     "title": "Подробности о Nextra ↗",
-    "href": "/about"
+    "href": "https://nextra.site/about"
   },
   "next.js-link": {
     "title": "Документация Next.js ↗",
