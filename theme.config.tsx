@@ -65,8 +65,8 @@ const config: DocsThemeConfig = {
 	faviconGlyph: 'ℹ️',
 	useNextSeoProps() {
     return {
-			title: 'Myrepo.ru',
-      titleTemplate: '%s | Мой репозиторий'
+			title: 'Мой репозиторий',
+      titleTemplate: '%s'
     }
   },
 	head: (
