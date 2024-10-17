@@ -66,9 +66,16 @@ const config: DocsThemeConfig = {
 	useNextSeoProps() {
     return {
 			title: 'Myrepo.ru',
-      titleTemplate: '%s | Сайт технического писателя'
+      titleTemplate: '%s | Мой репозиторий'
     }
-  }
+  },
+	head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Персональный сайт технического писателя" />
+      <meta property="og:description" content="Портфолио, база знаний, блог" />
+    </>
+  )
 }
 
 export default config

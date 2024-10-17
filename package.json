@@ -1,6 +1,6 @@
 {
-  "name": "myrepo-ru",
-  "version": "0.0.1",
+  "name": "myrepo.ru",
+  "version": "0.1.0",
   "description": "Personal website of a technical writer",
   "keywords": [
     "techdocs",
@@ -9,7 +9,9 @@
     "documentation",
     "development",
     "software",
-    "standard"
+    "standard",
+		"website",
+		"writer"
   ],
   "scripts": {
     "dev": "next dev",
@@ -20,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/pnrf/tech-docs.git"
   },
-  "author": "Yuri A.P.",
+  "author": "Yurnique",
   "bugs": {
     "url": "https://github.com/pnrf/tech-docs/issues"
   },
