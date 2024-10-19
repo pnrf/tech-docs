@@ -72,7 +72,6 @@ const config: DocsThemeConfig = {
 	head: (
     <>
       <meta property="og:description" content="Персональный сайт технического писателя" />
-			<meta name="robots" content="noindex, nofollow" />
     </>
   )
 }
