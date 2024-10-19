@@ -46,5 +46,9 @@
 	"obucheniye-veb-razrabotke": {
 		"title": "Веб-разработка",
     "display": "hidden"
+	},
+	"websites-layout": {
+		"title": "Вёрстка веб-сайтов",
+		"display": "hidden"
 	}
 }
