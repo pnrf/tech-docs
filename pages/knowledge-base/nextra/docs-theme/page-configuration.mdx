@@ -2,18 +2,20 @@ import { Callout, FileTree } from 'nextra/components'
 
 # Настройки страниц
 
-В Nextra структура сайта и страниц может быть настроена с помощью файлов `_meta.json`. В теме для документации доступно несколько настроек для дополнительной конфигурации. Они прежде всего влияют на общий вид темы, а также на отображение панели навигации и боковой панели.
+В Nextra структура сайта и страниц может быть настроена с помощью файлов `_meta.json`. В теме для документации доступно несколько дополнительных опций для конфигурации. 
+
+Эти опции определяют общий вид темы, особенно панель навигации и боковую панель.
 
 <Callout>
-  Read more about Nextra's `_meta.json` files
-  [here](/docs/guide/organize-files).
+  Подробности о файлах `_meta.json` доступны
+  [по ссылке](/docs/guide/organize-files).
 </Callout>
 
-## Pages
+## Страницы
 
-The title and order of a page shown in the sidebar should be configured in the
-`_meta.json` file as key-value pairs. For example, if you have the following
-file structure:
+Заголовок и порядок отображения списка страниц в боковой панели настраиваются в файлах `_meta.json` в формате "ключ-значение". 
+
+Допустим, что у вас имеется следующая структура:
 
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
@@ -24,25 +26,23 @@ file structure:
   </FileTree.Folder>
 </FileTree>
 
-You can define how the pages are shown in the sidebar via the `_meta.json` file:
+Переопределить вид и подрядок отображения списка страниц в боковой панели можно в файле `_meta.json`:
 
 ```json filename="_meta.json"
 {
-  "index": "My Homepage",
-  "contact": "Contact Us",
-  "about": "About Us"
+  "index": "Главная страница",
+  "contact": "Контакты",
+  "about": "О компании"
 }
 ```
 
 <Callout>
-  If any routes are not listed in the `_meta.json` file, they will be appended
-  to the end of the sidebar and sorted alphabetically, and the title will be
-  formatted with [Title](https://title.sh).
+  Если какие-либо страницы не будут указаны в файле `_meta.json`, то они будут автоматически добавлены в конец списка и отсортированы по алфавиту, а заголовок будет отформатирован по правилам [The Chicago Manual of Style](https://www.chicagomanualofstyle.org/home.html).
 </Callout>
 
-## Folders
+## Папки
 
-Folders can be configured in the same way as pages. For example:
+Папки можно настроить также, как и страницы. Например:
 
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
@@ -58,7 +58,7 @@ Folders can be configured in the same way as pages. For example:
   </FileTree.Folder>
 </FileTree>
 
-The top-level `_meta.json` file contains the meta information for the top-level
+Файл `_meta.json` верхнего уровня содержит метаданные для страниц и папок верхнего уровня:
 pages and folders:
 
 ```json filename="pages/_meta.json"
@@ -70,8 +70,7 @@ pages and folders:
 }
 ```
 
-And the nested `_meta.json` file contains the meta information for pages in the
-same folder:
+А вложенный файл `_meta.json` содержит метаданные страниц, находящихся в той же директории:
 
 ```json filename="pages/fruits/_meta.json"
 {
@@ -80,8 +79,7 @@ same folder:
 }
 ```
 
-This way, information for pages are grouped together in directories. You can
-move directories around without having to change the `_meta.json` file.
+Таким образом, информация генерируется в катологах, которые вы можете свободно перемещать, не изменяя `_meta.json` файл.
 
 ### Folders with Index Page
 
