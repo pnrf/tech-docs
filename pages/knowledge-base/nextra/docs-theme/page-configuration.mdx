@@ -2,9 +2,9 @@ import { Callout, FileTree } from 'nextra/components'
 
 # Настройки страниц
 
-В Nextra структура сайта и страниц может быть настроена с помощью файлов `_meta.json`. В теме для документации доступно несколько дополнительных опций для конфигурации. 
+В Nextra структуру сайта и страниц можно настроить с помощью файлов `_meta.json`. Тема для документации предоставляет несколько дополнительных конфигурационных опций. 
 
-Эти опции определяют общий вид темы, особенно панель навигации и боковую панель.
+Эти опции определяют общий вид темы, в особенности панель навигации и боковую панель.
 
 <Callout>
   Подробности о файлах `_meta.json` доступны
@@ -15,7 +15,7 @@ import { Callout, FileTree } from 'nextra/components'
 
 Заголовок и порядок отображения списка страниц в боковой панели настраиваются в файлах `_meta.json` в формате "ключ-значение". 
 
-Допустим, что у вас имеется следующая структура:
+Допустим, что у вас имеется следующая файловая структура:
 
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
@@ -59,7 +59,6 @@ import { Callout, FileTree } from 'nextra/components'
 </FileTree>
 
 Файл `_meta.json` верхнего уровня содержит метаданные для страниц и папок верхнего уровня:
-pages and folders:
 
 ```json filename="pages/_meta.json"
 {
@@ -79,14 +78,11 @@ pages and folders:
 }
 ```
 
-Таким образом, информация генерируется в катологах, которые вы можете свободно перемещать, не изменяя `_meta.json` файл.
+Таким образом, информация генерируется в катологах, которые можно свободно перемещать, не изменяя при этом сам файл `_meta.json`.
 
-### Folders with Index Page
+### Папки с индексной страницей
 
-What if I want to have a folder with an index page? We can add a MDX page with
-the same name and in the same directory as the folder. Let's say we want to add
-`/fruits` route in the example above, we can create a `fruits.mdx` file in
-pages:
+Что если мы захотим создать папку с индексной страницей? Можно довабить страницу MDX с тем же названием и в тот же каталог, что и папка. Допустим, мы хотим добавить `/fruits` в приведенный выше пример. Можно создать `fruits.mdx` в разделе "Страницы":
 
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
@@ -103,14 +99,11 @@ pages:
   </FileTree.Folder>
 </FileTree>
 
-Then Nextra knows that the `fruits` key in `_meta.json` defines a folder with an
-index page. If you click that folder in the sidebar, it will open the folder and
-show you the `fruits.mdx` page at the same time.
+В этом случае Nextra будет понимать, что ключ `fruits` в `_meta.json` определяет папку с индексной страницей. Если кликнуть на эту папку в боковой панели, она развернет свое содержимое и покажет страницу `fruits.mdx`.
 
-## External Links
+## Внешние ссылки
 
-You can add external links to the sidebar by adding an item with `href` in
-`_meta.json`:
+В боковую панель можно добавить внешние ссылки. Для этого в файле `_meta.json` нужно указать параметр `href`:
 
 ```json filename="pages/_meta.json" {6-9}
 {
@@ -125,7 +118,7 @@ You can add external links to the sidebar by adding an item with `href` in
 }
 ```
 
-To always open the link in a new tab, enable the `"newWindow": true` option:
+Для того, чтобы ссылка открывалась в новой вкладке, нужно активировать опцию `"newWindow": true`:
 
 ```json filename="pages/_meta.json" {9}
 {
@@ -142,14 +135,12 @@ To always open the link in a new tab, enable the `"newWindow": true` option:
 ```
 
 <Callout>
-  You can use this option to link to relative internal links too.
+  Также эту опцию можно применить к ссылкам на внутренние страницы вашего сайта.
 </Callout>
 
-## Hidden Routes
+## Скрытые маршруты
 
-By default, all MDX routes in the filesystem will be shown on the sidebar. But
-you can hide a specific pages or folders by using the `"display": "hidden"`
-configuration:
+По умолчанию все MDX маршруты (routes) файловой ситемы отображаются на боковой панели. Но, существует возможность скрыть определенные страницы и папки с помощью опции `"display": "hidden"`:
 
 ```json filename="pages/_meta.json" {4}
 {
@@ -161,20 +152,15 @@ configuration:
 }
 ```
 
-The page will still be accessible via the `/contact` URL, but it will not be
-shown in the sidebar.
+В этом случае страница по-прежнему будет доступна по URL-адресу `/contact`, но не будет отображаться на боковой панели. 
 
-## Navbar Items
+## Элементы навигационной панели
 
-### Sub Docs
+### Дополнительные документы
 
-By defining a top-level page or folder as `"type": "page"`, it will be shown as
-a special page on the navigation bar, instead of the sidebar. With this feature,
-you can have multiple "sub docs", and special pages or links such as "Contact
-Us" that are always visible.
+Если вы определите страницу или папку верхнего уровня как `"type": "page"`, она будет отображаться как специальная страница в панели навигации, а не на боковой панели. С помощью этой функции вы можете создать несколько «поддокументов» и специальных страниц или ссылок, таких как «Свяжитесь с нами», которые всегда будут видны.
 
-For example, you can have 2 docs folders `frameworks` and `fruits` in your
-project:
+Например, в вашем проекте могут быть 2 папки с документами `frameworks` и `fruits`:
 
 <FileTree>
   <FileTree.Folder name="pages" defaultOpen>
@@ -193,8 +179,7 @@ project:
   </FileTree.Folder>
 </FileTree>
 
-In your top-level `_meta.json` file, you can set everything as a page, instead
-of a normal sidebar item:
+В файле `_meta.json` верхнего уровня вы можете задать все как страницу, а не как обычный элемент боковой панели:
 
 ```json filename="pages/_meta.json"
 {
@@ -217,27 +202,25 @@ of a normal sidebar item:
 }
 ```
 
-And it will look like this:
+Вот как это будет выглядеть:
 
 ![Видео](https://nextra.site/assets/docs/sub-docs.mp4)
 
 <div className="mt-4 text-center text-sm">
-  [Live example on StackBlitz
+  [Живой пример на StackBlitz
   ↗](https://stackblitz.com/edit/nextra-2-docs-eszspq?file=pages%2F_meta.json)
 </div>
 
-You can also hide links like `Home` from the navbar with the
-[`"display": "hidden"`](#hidden-routes) option.
+Также вы можете скрыть ссылки, подобные `Home`, на панели навигации с помощью опции [`"display": "hidden"`](#hidden-routes).
 
-### Menus
+### Выпадающее меню
 
-You can also add menus to the navbar using `"type": "menu"` and the `"items"`
-option:
+На панель навигации можно добавить выпадающее меню, используя опции `"type": "menu"` и `"items"`:
 
 ![Скриншот](https://nextra.site/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmenu.47fb945c.png&w=3840&q=75)
 
 <div className="mt-8 text-center text-sm">
-  [Live example on StackBlitz
+  [Живой пример на StackBlitz
   ↗](https://stackblitz.com/edit/nextra-2-docs-2qopvp?file=pages%2F_meta.json)
 </div>
 
@@ -260,10 +243,9 @@ option:
 }
 ```
 
-### Links
+### Ссылки
 
-Same as the [External Links](#external-links) option, you can have external
-links in the navbar too:
+[Внешние ссылки](#external-links) также можно добавить на навигационную панель:
 
 ```json filename="pages/_meta.json"
 {
@@ -284,11 +266,9 @@ links in the navbar too:
 }
 ```
 
-## Fallbacks
+## Запасные варианты (Fallbacks)
 
-In the [Sub Docs](#sub-docs) example above, we have to define the
-`"type": "page"` option for every page. To make it easier, you can use the `"*"`
-key to define the fallback configuration for all items in this folder:
+В приведенном выше примере с [Поддокументами](#sub-docs) параметр `"type": "page"` необходимо задавать для каждой страницы. Эту задачу можно упростить, используя ключ `"*"` для определения резервной конфигурации всех элементов в папке:
 
 ```json filename="pages/_meta.json" {2-4}
 {
@@ -302,12 +282,11 @@ key to define the fallback configuration for all items in this folder:
 }
 ```
 
-They are equivalent where all items have `"type": "page"` set.
+Они эквивалентны тем, где используется `"type": "page"`.
 
-## Separators
+## Разделители
 
-You can use a "placeholder" item with `"type": "separator"` to create a
-separator line between items in the sidebar:
+Возможно использовать элемент "плейсхолдер" с параметром `"type": "separator"` для создания разделительной линии между элементами на боковой панели:
 
 ```json filename="_meta.json"
 {
@@ -320,18 +299,14 @@ separator line between items in the sidebar:
 ```
 
 <Callout>
-  Together with the
-  [`sidebar.titleComponent`](/docs/docs-theme/theme-configuration#sidebar) theme
-  option, you can customize the look of titles and separator lines in the
-  sidebar.
+  С помощью опции [`sidebar.titleComponent`](/docs/docs-theme/theme-configuration#sidebar) можно настроить внешний вид заголовков и разделительных линий на боковой панели.
 </Callout>
 
-## Advanced
+## Дополнительно
 
-### Theme Components
+### Компоненты темы
 
-You can configure the theme for each page using the `"theme"` option. For
-example, you can disable or enable specific components for specific pages:
+Вы можете настроить тему для каждой страницы с помощью опции `"theme"`. Например, можно отключить или включить определенные компоненты для конкретных страниц:
 
 ```json filename="pages/_meta.json"
 {
@@ -348,18 +323,15 @@ example, you can disable or enable specific components for specific pages:
 }
 ```
 
-This option will be inherited by all child pages if set to a folder.
+Этот параметр будет наследоваться всеми дочерними страницами, если он задан для папки.
 
-### Layouts
+### Макеты
 
-By default, each page has `"layout": "default"` in their theme config, which is
-the default behavior.
+По умолчанию в конфигурации темы каждой страницы установлен параметр `"layout": "default"`.
 
-#### Raw Layout
+#### Исходный макет
 
-By default, Nextra renders the MDX content (such as `h1`, `h2`, `h3` etc.) with
-themed components, inside a content container. You can use the `"raw"` layout to
-let Nextra to not inject any styles to the content:
+По умолчанию Nextra отображает содержимое MDX-файлов (например, `h1`, `h2`, `h3` и т.д.) с помощью тематических компонентов внутри контейнера содержимого. Допустимо использовать значение `"raw"`, чтобы запретить Nextra добавлять стили к содержимому:
 
 ```json filename="pages/_meta.json" {5}
 {
@@ -372,10 +344,9 @@ let Nextra to not inject any styles to the content:
 }
 ```
 
-#### Full Layout
+#### Широкий макет
 
-You might want to render some page with the full container width and height, but
-keep all the other styles. You can use the `"full"` layout to do that:
+Возможно, вы захотите отобразить какую-нибудь страницу во всю ширину и высоту контейнера, но при этом сохранить остальные стили. Для этого можно использовать значение `full`:
 
 ```json filename="pages/_meta.json" {5}
 {
@@ -388,14 +359,11 @@ keep all the other styles. You can use the `"full"` layout to do that:
 }
 ```
 
-### Typesetting
+### Форматирование текста
 
-The `"typesetting"` option controls typesetting details like font features,
-heading styles and components like `li` and `code`. There are `"default"` and
-`"article"` typesettings available in the docs theme.
+Опция `"typesetting"` управляет такими параметрами форматирования, как особенности шрифта, стили заголовков и компоненты `li` и `code`. В теме для документации доступны параметры `"default"` и `"article"`.
 
-The default one is suitable for most cases like documentation, but you can use
-the `"article"` typesetting to make it look like an elegant article page:
+Шрифт по умолчанию подходит для большинства случаев, например, для документации, но вы можете использовать `"article"` для оформления, чтобы оно выглядело как элегантная страница со статьей:
 
 ```json filename="pages/_meta.json" {5}
 {
@@ -409,6 +377,6 @@ the `"article"` typesetting to make it look like an elegant article page:
 ```
 
 <div className="mt-4 text-center text-sm">
-  [Live example on StackBlitz
+  [Живой пример на StackBlitz
   ↗](https://stackblitz.com/edit/nextra-2-docs-hg77h3?file=pages%2F_meta.json,pages%2Findex.mdx)
 </div>
